@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>{{ title }}</title>
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+<!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <!--Just the logo.. Don't mind this-->
+    <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+    </svg>
+    <h1>Math Worksheet<br /><br />
+    <a class="button btn-5" href="../test" style="text-decoration:none;">Click to start</a></h1>
+    </div>
+
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    
+    <div style="background-color: white; font-family: 'Asap', sans-serif;">
+    <!-- HERE ADD STATEMENT AND EXPLAIN WEBSITE -->
+    <h1>About Website</h1>
+    <hr>
+    <p>Packages used: </p>
+    <!-- <code><p>
+        pip install flask
+        pip install SQLAlchemy
+        pip install WTForms==2.3.3
+        pip install Flask
+        pip install Flask-Bootstrap
+        pip install Flask-Login
+        pip install Flask-MySQL
+        pip install Flask-MySQLdb
+        pip install Flask-SQLAlchemy
+        pip install Flask-WTF
+        pip install latextable
+        pip install names
+        pip install num2words
+        pip install numpy
+        pip install sympy
+        pip install pandas
+        pip install scipy
+        pip install texttables
+        pip install texttable
+        pip install tabulate
+    </p></code> -->
+    <!-- # AGS_Worksheet_Generator
+
+```## Future Plans:
+* improve navbar, sidebar
+* add user login, register, settings
+* add teacher, parent, classroom database set up
+* TOGGLE HTML VERSION FOR LIVE ANSWERING (image of exmaple + mathjax/SVG plot) https://github.com/kisonecat/tikzjax
+* ADHD font availability in PDF
+* AUTO GRADE FEATURE
+* Quizlet similar single online activities availiablity
+    - lazy loading using async JS and creating
+* Local compilation of latex PDF -->
+
+<!-- show graphical, figure, table, word problem, problemset, etc capabilties -->
+    </div>
+    <!--Content starts-->
+    <div class="content flex">
+    <p>Made by Seung Min Yu</p>
+    </div>
+    <!--Content ends-->
+{% endblock %}
