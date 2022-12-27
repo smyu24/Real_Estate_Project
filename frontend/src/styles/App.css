@@ -1,0 +1,91 @@
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: rgb(234, 155, 51);
+  --color-grey-4: #454e60
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-primary);
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  transition: .6s all;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 4%;
+  overflow-y: auto;
+  color: white;
+
+}
+
+
+.side-panel-toggle {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  color: white;
+  background-color: var(--color-grey-4);
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 17rem;
+  height: 20vh;
+  transition: .6s all;
+}
+
+.side-panel-toggle:hover {
+  background-color: #393d47;
+}
+
+.sp-icon-close {
+  display: none  !important;
+  transition: .6s all;
+}
+
+.side-panel {
+  transition: .6s all;
+  width: 40%;
+  flex-shrink: 0;
+  padding: 20px;
+  color: white;
+  background-color: var(--color-grey-4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.side-panel-open .side-panel {
+  width: 0px;
+  transition: .6s all;
+}
+
+.side-panel-open .sp-icon-open {
+  display: none !important;
+}
+
+.side-panel-open .sp-icon-close {
+  display: initial !important;
+}
+
+.content-closed {
+  opacity: 0 !important;
+  transition: 5s ease-in-out
+}
+
+.side-content {
+  opacity: 1;
+  transition: .4s ease-in-out;
+}
+
+.submit-button {
+  margin-top: 3rem;
+}
